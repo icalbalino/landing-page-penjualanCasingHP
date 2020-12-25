@@ -1,0 +1,1146 @@
+<html><head>
+	<link rel="shortcut icon" href="assets/images/ALFACUSTOMpng1_20201222030313.png">
+	<title>checkout</title>
+	<link rel="stylesheet" href="assets/plugins/grapejs/css/styles.css">
+	<link rel="stylesheet" href="assets/plugins/grapejs/bower_components/jquery.datetimepicker.min.css">
+	<link href="assets/plugins/bootstrap/css/bootstrap.css?v=2020-12-2412:24:46am" rel="stylesheet">
+	<link href="assets/plugins/grapejs/iconpicker/fontawesome-iconpicker.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/plugins/grapejs/fontpicker/jquery.fontselect.css">
+	<link rel="stylesheet" href="assets/plugins/font-awesome-4.7.0/font-awesome.css">
+	<!-- META -->
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:type" content="website">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="alfacustom.funnelspro.co.id">
+	<meta property="og:url" content="alfacustom.funnelspro.co.id">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:site_name" content="alfacustom.funnelspro.co.id">
+	<meta property="og:image" content="assets/images/logo.png">
+	<meta property="og:image:type" content="image/png, image/jpeg, image/jpg">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:400,700|Droid+Sans:400,700|Roboto:400,700|Lato:400,700|PT+Sans:400,700|Source+Sans+Pro:400,700|Noto+Sans:400,700|PT+Sans:400,700|Ubuntu:400,700|Bitter:400,700|PT+Serif:400,700|Rokkitt:400,700|Droid+Serif:400,700|Raleway:400,700|Inconsolata:400,700|Roboto:400,700|Lato:400,700|Fjalla+One:400,700|Oxygen:400,700|Bitter:400,700|Patrick+Hand:400,700|Patrick+Hand+SC:400,700|Poiret+One:400,700|Playfair+Display:400,700|Alegreya:400,700|Old+Standard+TT:400,700|Pompiere:400,700|Bree+Serif:400,700|Poppins|Slabo+27px|Roboto+Slab|Adamina|Crete+Round|Domine|Droid+Serif|Libre+Baskerville|Lora|Merriweather|Noto+Serif|Alfa+Slab+One|Arima+Madurai|Baloo+Bhaina|Cinzel+Decorative|Diplomata+SC|Fredoka+One|Lobster|Overlock|Passion+One|Patua+One|Ranga|Special+Elite|Graduate|Alex+Brush|Caveat|Dancing+Script|Gloria+Hallelujah|Handlee|Just+Me+Again+Down+Here|Pangolin|Reenie+Beanie|Rock+Salt|Shadows+Into+Light+Two|Cousine|Droid+Sans+Mono|Inconsolata|Overpass+Mono|PT+Mono|Roboto+Mono|Source+Code+Pro|Ubuntu+Mono|Montserrat" rel="stylesheet" type="text/css">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Droid+Sans|Roboto|Lato|PT+Sans|Source+Sans+Pro|Noto+Sans|PT+Sans|Ubuntu|Bitter|PT+Serif|Rokkitt|Droid+Serif|Raleway|Inconsolata|Roboto|Lato|Fjalla+One|Oxygen|Bitter|Patrick+Hand|Patrick+Hand+SC|Poiret+One|Playfair+Display|Alegreya|Old+Standard+TT|Pompiere|Bree+Serif|Poppins|Slabo+27px|Roboto+Slab|Adamina|Crete+Round|Domine|Droid+Serif|Libre+Baskerville|Lora|Merriweather|Noto+Serif|Alfa+Slab+One|Arima+Madurai|Baloo+Bhaina|Cinzel+Decorative|Diplomata+SC|Fredoka+One|Lobster|Overlock|Passion+One|Patua+One|Ranga|Special+Elite|Graduate|Alex+Brush|Caveat|Dancing+Script|Gloria+Hallelujah|Handlee|Just+Me+Again+Down+Here|Pangolin|Reenie+Beanie|Rock+Salt|Shadows+Into+Light+Two|Cousine|Droid+Sans+Mono|Inconsolata|Overpass+Mono|PT+Mono|Roboto+Mono|Source+Code+Pro|Ubuntu+Mono|Montserrat" rel="stylesheet" type="text/css"> -->
+	<link rel="stylesheet" href="assets/plugins/grapejs/fontpicker/fontTambahan2/stylesheet.css">
+	<style>
+		@media (max-width: 480px) {
+			.fn_closeLPModal {
+				top: -5px !important;
+			}
+
+			.custom-notification-container {
+				height: 55px !important;
+			}
+
+			.custom-notification-image {
+				max-height: 60px !important;
+			}
+
+			.notification-subject {
+				font-size: 12px !important;
+			}
+
+			.notification-desc {
+				font-size: 10px !important;
+			}
+
+			.notification-time {
+				font-size: 9px !important;
+			}
+
+			.modal-content {
+				padding: 0 14px !important;
+			}
+
+			.modal-content-row {
+				padding: 0 !important;
+			}
+
+			.modal-dialog {
+				width: 90% !important;
+			}
+		}
+
+		.fn_closeLPModal {
+			position: absolute;
+			right: 0px;
+			top: 0px;
+			cursor: pointer;
+		}
+
+		.editor-row {
+			padding: 0px 0px !important;
+		}
+
+		.editor-canvas {
+			padding: 0px 0px !important;
+		}
+
+		#gjs {
+			padding: 0px 0px !important;
+		}
+
+		.copyright-text p a:hover {
+			color: #f15a29 !important;
+		}
+
+		button,
+		input,
+		optgroup,
+		select,
+		textarea {
+			margin-bottom: 0px;
+			font: inherit;
+			color: inherit;
+		}
+
+		.modal-body .gjs-row button {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			padding-right: 25px;
+			padding-left: 25px;
+			font-size: 20px;
+			font-weight: 700;
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		.modal-body .gjs-row {
+			max-width: 919px;
+		}
+
+		.custom-notification {
+			width: 320px;
+			border: 0;
+			text-align: left;
+			z-index: 9999;
+			box-sizing: border-box;
+			font-weight: 400;
+			border-radius: 6px;
+			box-shadow: 2px 2px 10px 2px hsla(0, 4%, 4%, 0.2);
+			background-color: #fff;
+			position: relative;
+			cursor: pointer;
+		}
+
+		.custom-social-proof {
+			position: fixed;
+			bottom: 20px;
+			left: 20px;
+			cursor: pointer;
+			display: none;
+			z-index: 9999999999 !important;
+		}
+
+		.custom-notification-container {
+			display: flex !important;
+			height: 80px;
+			align-items: center;
+		}
+
+		.custom-notification-image {
+			max-height: 75px;
+			overflow: hidden;
+			border-radius: 6px 0 0 6px;
+			object-fit: cover;
+			padding-left: 5px;
+		}
+
+		.custom-notification-content-wrapper {
+			max-height: 75px;
+			width: 100%;
+			overflow: hidden;
+			border-radius: 6px 0 0 6px;
+			object-fit: cover;
+			padding-left: 5px;
+		}
+
+		.custom-notification-content {
+			padding-left: 5px;
+		}
+
+		.custom-close {
+			display: inline-block;
+			position: absolute;
+			top: 5px;
+			right: 10px;
+			cursor: pointer;
+		}
+
+		.notification-subject {
+			font-weight: 600;
+			margin-bottom: 0;
+		}
+
+		.notification-desc {
+			font-size: 12px;
+			margin-bottom: 5px;
+		}
+
+		div[type="scroll-pixel-event"],
+		.custom-code-wrapper {
+			display: none;
+		}
+
+		div[type="scroll-target-event"] {
+			visibility: hidden;
+		}
+
+		[class="facebook-comments-wrapper"] {
+			display: none;
+		}
+
+		.editor-row{
+			min-height: 100%;
+		}
+		@media (max-width: 327px) {
+			#gjs{
+				min-height: -moz-calc(100% - 216.750px);
+				min-height: -webkit-calc(100% - 216.750px);
+				min-height: calc(100% - 216.750px);
+			}
+		}
+		@media (min-width:328px) and (max-width: 468px) {
+			#gjs{
+				min-height: -moz-calc(100% - 190.750px);
+				min-height: -webkit-calc(100% - 190.750px);
+				min-height: calc(100% - 190.750px);
+			}
+		}
+		@media (min-width: 469px) {
+			#gjs{
+				min-height: -moz-calc(100% - 130.750px);
+				min-height: -webkit-calc(100% - 130.750px);
+				min-height: calc(100% - 130.750px);
+			}
+		}
+	</style>
+		<script src="https://connect.facebook.net/id_ID/sdk.js?hash=aad693ab96ac47f7a897a313be01f963&amp;ua=modern_es6" async="" crossorigin="anonymous"></script><script type="text/javascript">
+		var realMode = 1;
+	</script>
+	<style>
+		* { box-sizing: border-box; } body {margin: 0;}.gjs-row{padding:5px 0px !important;display:flex;justify-content:flex-start;align-items:stretch;flex-wrap:nowrap;}.gjs-cell{padding:5px 40px;min-height:75px;flex-grow:1;flex-basis:100%;width:100%;}@media (max-width: 768px){.gjs-row{flex-wrap:wrap;}}	</style>
+	<style type="text/css">
+		* { box-sizing: border-box; } body {margin: 0;}.gjs-row{padding:5px 0px !important;display:flex;justify-content:flex-start;align-items:stretch;flex-wrap:nowrap;}.gjs-cell{padding:5px 40px;min-height:75px;flex-grow:1;flex-basis:100%;width:100%;}.countdown-cont{display:inline-block;}.first-countdown-block{display:none !important;}.cnbiz.mk8vn.countdown{color:#ffffff;}.form{padding-top:12px;padding-right:12px;padding-bottom:12px;padding-left:12px;}.form .form-group{padding-top:12px;padding-right:0px;padding-bottom:12px;padding-left:0px;}.form .label-wrapper{margin-bottom:12px;}.form input:not([type="checkbox"]), .form textarea{padding-top:12px;padding-right:12px;padding-bottom:12px;padding-left:12px;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(224, 224, 224);border-right-color:rgb(224, 224, 224);border-bottom-color:rgb(224, 224, 224);border-left-color:rgb(224, 224, 224);}.yvn02{width:100%;padding:10px 80px;min-height:75px;}.h96yw{background-color:#f59494;}.o3d19{flex-basis:65.2%;}.b3ot1{padding:10px;font-size:25px !important;text-align:center;font-family:"Raleway", sans-serif;margin-bottom:20px !important;margin-top:100px !important;}.wrmoy{padding:10px;font-size:24px;text-align:center;font-family:"Raleway", sans-serif;margin-bottom:20px !important;}.f9mw4{display:block;margin-left:auto;margin-right:auto;margin-bottom:20px !important;width:75%;margin-top:100px !important;}.edpcq{background-color:#f59494;}.zwdjn{padding:10px;font-size:18px !important;text-align:center;font-family:"Raleway", sans-serif;margin-bottom:20px !important;}.z4dzk{background-color:#f59494;}.sgsr2{flex-basis:143.8%;}.m0bz8{width:100%;margin-bottom:20px !important;}.sobwh{width:100%;margin-bottom:20px !important;}.ni9mh{padding:10px;font-size:18px !important;text-align:center;font-family:"Raleway", sans-serif;margin-bottom:20px !important;}.tuppu-countdown-digit{font-size:31 !important;text-align:center !important;margin-top:0px !important;margin-bottom:8px !important;background:rgba(0, 0, 0, 0.8) !important;color:white !important;border:2px solid black !important;border-radius:100px !important;padding:0.35em 0.503em !important;}.tuppu-countdown-endtext{font-size:31px !important;}.tuppu{font-size:14px !important;text-align:center !important;font-family:Helvetica, serif !important;margin-top:0px !important;margin-bottom:20px !important;}.tuppu-countdown-block{display:inline-block;margin:0 10px;padding:10px;max-width:80%;}.c3836{width:100%;font-size:20px;border:none !important;background-color:#f15a29;color:#fff;margin-bottom:20px !important;padding-top:10px !important;padding-bottom:10px !important;border-radius:3px !important;}.sto5h{flex-basis:65.2%;}.beuv4{padding:10px;font-size:25px !important;text-align:center;font-family:"Raleway", sans-serif;margin-bottom:20px !important;margin-top:0px !important;}.pe3i0{padding:10px;font-size:18px !important;text-align:center;font-family:"Raleway", sans-serif;margin-bottom:20px !important;}.dqs0l{display:block;margin-left:auto;margin-right:auto;margin-bottom:20px !important;width:75%;margin-top:100px !important;}@media (max-width: 768px){.gjs-row{flex-wrap:wrap;}}@media (max-width: 480px){.gjs-row{flex-wrap:wrap;}}	</style>
+<style type="text/css" fbcssmodules="css:fb.css.basecss:fb.css.dialog css:fb.css.iframewidget">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style></head>
+
+<body>
+	<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+	<script async="" defer="" crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&amp;version=v9.0" nonce="WOScMrhp"></script>
+	<script src="assets/plugins/code-jquery/jquery-2.2.4.min.js" crossorigin="anonymous"></script>
+	<div class="editor-row">
+		<div class="editor-canvas" style="width:100%">
+			<div id="gjs">
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"><link><div data_hide_on="" class="yvn02"><div data_hide_on="dekstop" class="h96yw gjs-row"><div class="o3d19 gjs-cell"><div class="b3ot1"><p style="text-align:justify"><strong>Apa yang Akan Kamu Dapatkan Jika Beli Hari Ini</strong></p></div><div class="wrmoy"><ul><li style="text-align:justify">1 pc high grade case hardcase 3D</li><li style="text-align:justify">Free Design</li><li style="text-align:justify">Free Return</li><li style="text-align:justify">100% guarantee money back jika terjadi rusak pada case saat pengiriman</li><li style="text-align:justify">Free Ongkir</li></ul></div></div><div class="c6y1x gjs-cell"><img src="assets/images/public/photo202012221452111132_20201222032135.jpg" class="f9mw4 lazy loaded" ll-status="loaded" src="assets/images/public/photo202012221452111132_20201222032135.jpg"></div></div><div data_hide_on="mobile" class="c7j1b h96yw gjs-row"><div class="jmmtp gjs-cell"><img src="assets/images/public/photo20201222145232_20201222025415.jpg" class="dqs0l lazy loaded" ll-status="loaded" src="assets/images/public/photo20201222145232_20201222025415.jpg"></div><div class="sto5h gjs-cell"><div class="beuv4"><p><strong>Apa yang Akan Kamu Dapatkan Jika Beli Hari Ini</strong></p></div><div class="pe3i0"><ul><li style="text-align:justify">1 pc high grade case hardcase 3D</li><li style="text-align:justify">Free Design</li><li style="text-align:justify">Free Return</li><li style="text-align:justify">100% guarantee money back jika terjadi rusak pada case saat pengiriman</li><li style="text-align:justify">Free Ongkir</li></ul></div></div></div><div class="edpcq gjs-row"><div class="y445b gjs-cell"><div chkredirect="N" redirectto="" id="ianpz" class="tuppu ustr2 countdown"><span highlightable="false" js="countdown" class="countdown-cont"><div class="tuppu-countdown-block first-countdown-block">
+         </div><div class="tuppu-countdown-block"><div js="countdown-hour" class="tuppu-countdown-digit c-countdown-digit count-hour">02</div><div highlightable="false" class="countdown-label">hours</div></div><div class="tuppu-countdown-block"><div js="countdown-minute" class="tuppu-countdown-digit c-countdown-digit count-minute">54</div><div highlightable="false" class="countdown-label">minutes</div></div><div class="tuppu-countdown-block"><div js="countdown-second" class="tuppu-countdown-digit c-countdown-digit count-second">49</div><div highlightable="false" class="countdown-label">seconds</div></div></span><span js="countdown-endtext" class="tuppu-countdown-endtext countdown-endtext" style="display: none;"></span></div><div class="zwdjn"><p>Promo “Rp50.000” Akan Berakhir Apabila Jam Menunjukan 00:00:00&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;</p></div></div></div><div class="z4dzk gjs-row"><div class="z23sd gjs-cell"></div><div class="sgsr2 gjs-cell"><form class="k2yiq form" action="https://funnelspro.co.id/receiver"><input placeholder="Isi Dengan Nama Kamu" required="" name="first_name" class="m0bz8"><input placeholder="Isi Dengan No Whatsapp Kamu" name="phone" class="sobwh"><button type="waLink" onclick="triggerWA('waLink','','window.location','initiateCheckout','','SGFsbG8gS2FrLCBTYXlhIHRlcnRhcmlrIHNhbWEgY3VzdG9tIGNhc2Uga2FrYSB0YXBpIHNheWEgdGFueWEgdGFueWEgdGVybGViaWggZGFodWx1IHlhIGthay4u','081326694859');return false;" data_hide_on="" class="c3836">Pesan Sekarang<br></button><div class="ni9mh"><p>Kamu akan dihubungkan ke customer service kami via Whatsapp<br></p></div><input type="hidden" name="urlTargetForm" value="checkout-form-fitness-dino1-f7e82-4a079/"><input type="hidden" name="stepsTargetForm" value="45938"></form></div><div class="g3ybc gjs-cell"></div></div></div><script>var items = document.querySelectorAll('#ianpz');
+        for (var i = 0, len = items.length; i < len; i++) {
+          (function(){var e, n = parseInt("3"),
+                                t = parseInt(""),
+                                o = parseInt(""),
+                                a = 36e5 * (isNaN(n) ? 0 : n) + 6e4 * (isNaN(t) ? 0 : t) + 1e3 * (isNaN(o) ? 0 : o);
+                            e = 0 == a ? new Date("").getTime() + a : (new Date).getTime() + a;
+                            var s = this.querySelector("[js=countdown]"),
+                                d = this.querySelector("[js=countdown-endtext]"),
+                                i = this.querySelector("[js=countdown-day]"),
+                                l = this.querySelector("[js=countdown-hour]"),
+                                r = this.querySelector("[js=countdown-minute]"),
+                                u = this.querySelector("[js=countdown-second]"),
+                                c = this.gjs_countdown_interval;
+                            c && c && clearInterval(c);
+                            var f = function(e, n, t, o) {
+                                    l.innerHTML = e < 10 ? "0" + e : e, l.innerHTML = n < 10 ? "0" + n : n, r.innerHTML = t < 10 ? "0" + t : t, u.innerHTML = o < 10 ? "0" + o : o
+                                },
+                                p = function() {
+                                    var n = (new Date).getTime(),
+                                        t = e - n,
+                                        o = Math.floor(t / 864e5),
+                                        a = Math.floor(o * 24 + t % 864e5 / 36e5),
+                                        i = Math.floor(t % 36e5 / 6e4),
+                                        l = Math.floor(t % 6e4 / 1e3);
+                                    f(o, a, i, l), t < 0 && (clearInterval(v), d.innerHTML = "EXPIRED", s.style.display = "none", d.style.display = "")
+                                };
+                            if (e) {
+                                var v = setInterval(p, 1e3);
+                                this.gjs_countdown_interval = v, d.style.display = "none", s.style.display = "", p()
+                            } else f(0, 0, 0, 0)}.bind(items[i]))();
+        }</script>			</div>
+			<section class="custom-social-proof">
+				<div class="custom-notification">
+					<div class="custom-notification-container">
+						<div class="custom-notification-image-wrapper">
+							<img src="assets/images/verify.png" class="custom-notification-image">
+						</div>
+						<div class="custom-notification-content-wrapper">
+							<div class="custom-notification-content">
+								<p class="notification-subject">Someone from Yogyakarta</p>
+								<p class="notification-desc">Baru saja melakukan order</p>
+								<small class="notification-time text-muted">1 hour ago</small>
+							</div>
+						</div>
+					</div>
+					<div class="custom-close">
+						<a href="#" class="btn-close-notification"><i class="fa fa-times"></i></a>
+					</div>
+				</div>
+			</section>
+							<footer class="footer" id="footer" style="bottom: 0;width:100%;">
+					<div class="mini-footer" style="background:#0000000a;text-align:center;padding:30px 0;">
+						<div class="container">
+							<div class="row" style="margin-left: 0px; margin-right: 0px;">
+								<div class="col-md-12">
+									<div class="text-center" style="margin-bottom:20px;">
+										<div style="width:150px;display:inline-block;">
+											<img src="assets/images/ALFACUSTOMpng1_20201222030313.png" class="img-fluid">
+										</div>
+									</div>
+									<div class="copyright-text">
+										<p style="margin:0;line-height:26px;font-size:15px;color:#0000005c;">© Copyright 2020
+											<span style="color:#0000005c;">Rizz</span>. All rights reserved.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</footer>
+				<script>
+					// $(window).on('load', function() {
+					// 	var heightOfWindow = parseInt(window.innerHeight);
+					// 	var footer = document.getElementById('footer');
+					// 	var heightOfFooter = parseInt(footer.offsetHeight);
+					// 	var gjs = document.getElementById('gjs');
+					// 	var heightOfgjs = parseInt(gjs.offsetHeight);
+					// 	var totalHeight = heightOfgjs + heightOfFooter;
+					// 	console.log(totalHeight);
+					// 	console.log(heightOfWindow);
+					// 	if (totalHeight < heightOfWindow) {
+					// 		document.getElementById('footer').style.position = "absolute";
+					// 	} else {
+					// 		document.getElementById('footer').style.position = "";
+					// 	}
+					// });
+				</script>
+					</div>
+	</div>
+			<div class="modal fade" id="modal" role="dialog" backdrop="static" keyboard="false">
+			<div class="modal-dialog modal-lg html-step-modal" style="width: 80%;margin-right:auto;margin-left:auto;">
+				<div class="modal-content">
+					<div class="row modal-content-row">
+						<div class="modal-body" style="padding-top:0px; padding-bottom:0px;">
+							<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"><link><div class="kvc2h l34ox gjs-row"><div class="gjs-cell"></div></div>						</div>
+					</div>
+					<div class="fn_closeLPModal">
+						<img src="assets/plugins/grapejs/asset/close_modal.ico" width="39px" height="auto">
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+		$(document).ready(function(e) {
+			// Change type input form integration sendgrid
+			setTimeout(() => {
+				$("input[name='custom_fields']").siblings("input[name='email']").attr('type', 'email');
+				$("input[name='custom_fields']").siblings("input[name='email']").attr('required', 'required');
+			}, 300);
+
+			// Render Element Custom Code
+			let customCode = $("div[class='custom-code-wrapper']").parent().attr('custom-code');
+			let elCustomCode = $("div[class='custom-code-wrapper']").parent();
+			$.each(elCustomCode, function(key, value) {
+				let e = $(value);
+				let code = e.attr('custom-code');
+
+				// Change "src" into "src" , because some plugin img can't work with src
+				// var mySubString = code.substring(
+				// 	code.lastIndexOf(`<div class="fotorama">`) + 22, 
+				// 	code.lastIndexOf("</div>")
+				// );
+				let newCode = code.replace(new RegExp('src', 'g'), 'src');
+				// let newCode = code.replace(mySubString, newStringSrc);
+				e.append(newCode);
+			})
+
+			function convertMinsToHrsMins(mins) {
+				let h = Math.floor(mins / 60);
+				let m = mins % 60;
+				h = h;
+				m = m;
+				if (h != 0) {
+					return `${h} hours ago`;
+				} else {
+					return `${m} minutes ago`;
+				}
+			}
+
+			// Toggle Notification
+			var sales_notification = "";
+			if (sales_notification == "TRUE") {
+				const city = ["Jakarta", "Bogor", "Depok", "Tangerang", "Bekasi", "Yogyakarta", "Bandung", "Surabaya", "Semarang", "Makassar", "Bali", "Medan", "Pontianak"];
+				var status = "close";
+
+				setInterval(function() {
+					if (status == "close") {
+						status = "open";
+						const random = Math.floor(Math.random() * city.length);
+						$('.notification-subject').text("Someone from " + city[random]);
+						$('.notification-time').text(convertMinsToHrsMins(Math.floor(Math.random() * 1440) + 1));
+					} else {
+						status = "close";
+					}
+
+					$(".custom-social-proof").stop().slideToggle(300);
+				}, 5000);
+
+				$(".btn-close-notification").click(function(e) {
+					e.preventDefault();
+					$(".custom-social-proof").stop().slideToggle(300);
+				});
+			}
+
+			// Check scroll pixel event
+			var triggerEvent = []; // variable contain trigger event each pixel element , 1 is mean already trigger
+			var triggerEventModal = [];
+			$(window).on('scroll', function() {
+				$("#gjs").find("div[type='scroll-pixel-event']").each(function(index, value) {
+					var classEl = $("#gjs").find("div[type='scroll-pixel-event']").eq(index).attr("class");
+					var classArr = classEl.split(" ");
+
+					var windowHeight = $(window).height();
+					var windowScrollTop = $(window).scrollTop();
+					var elementHeight = $("#gjs").find("div[type='scroll-pixel-event']").eq(index).height();
+					var elementOffsetTop = $("#gjs").find("div[type='scroll-pixel-event']").eq(index).offset().top;
+
+					// Seen function, index 1 is class trigger type
+					if (classArr[1] == "seen") {
+						if (triggerEvent[classArr[0]] != 1 && (elementOffsetTop <= windowScrollTop + windowHeight) && (elementOffsetTop + elementHeight >= windowScrollTop)) {
+							triggerEvent[classArr[0]] = 1;
+							var event = classArr[2].replace("Event", "").charAt(0).toUpperCase() + classArr[2].replace("Event", "").slice(1);
+							var pixel_id = classArr[3].split("-");
+
+							! function(f, b, e, v, n, t, s) {
+								if (f.fbq) return;
+								n = f.fbq = function() {
+									n.callMethod ?
+										n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+								};
+								if (!f._fbq) f._fbq = n;
+								n.push = n;
+								n.loaded = !0;
+								n.version = '2.0';
+								n.queue = [];
+								t = b.createElement(e);
+								t.async = !0;
+								t.src = v;
+								s = b.getElementsByTagName(e)[0];
+								s.parentNode.insertBefore(t, s)
+							}(window, document, 'script',
+								'https://connect.facebook.net/en_US/fbevents.js');
+
+							$.each(pixel_id, function(index, value) {
+								fbq('init', value);
+								fbq('trackSingle', value, event);
+							});
+
+							// classArr Index 3 is pixel id, index 2 is pixel event from element class
+						}
+					}
+
+					// Bypassed Function, classArr index 1 is trigger type from element class
+					if (classArr[1] == "bypassed") {
+						if (triggerEvent[classArr[0]] != 1 && elementOffsetTop <= windowScrollTop) {
+							triggerEvent[classArr[0]] = 1;
+							var event = classArr[2].replace("Event", "").charAt(0).toUpperCase() + classArr[2].replace("Event", "").slice(1);
+							var pixel_id = classArr[3].split("-");
+
+							! function(f, b, e, v, n, t, s) {
+								if (f.fbq) return;
+								n = f.fbq = function() {
+									n.callMethod ?
+										n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+								};
+								if (!f._fbq) f._fbq = n;
+								n.push = n;
+								n.loaded = !0;
+								n.version = '2.0';
+								n.queue = [];
+								t = b.createElement(e);
+								t.async = !0;
+								t.src = v;
+								s = b.getElementsByTagName(e)[0];
+								s.parentNode.insertBefore(t, s)
+							}(window, document, 'script',
+								'https://connect.facebook.net/en_US/fbevents.js');
+
+							$.each(pixel_id, function(index, value) {
+								fbq('init', value);
+								fbq('trackSingle', value, event);
+							});
+
+							// classArr Index 3 is pixel id, index 2 is pixel event from element class
+						}
+					}
+				});
+			});
+
+
+			// Modal pixel event scroll
+			$("#modal").on('scroll', function() {
+				$("#modal").find("div[type='scroll-pixel-event']").each(function(index, value) {
+					var classElModal = $("#modal").find("div[type='scroll-pixel-event']").eq(index).attr("class");
+					var classArrModal = classElModal.split(" ");
+
+					var modalHeight = $("#modal").height();
+					var modalScrollTop = $("#modal").scrollTop();
+					var elementHeight = $("#modal").find("div[type='scroll-pixel-event']").eq(index).height();
+					var elementOffsetTop = $("#modal").find("div[type='scroll-pixel-event']").eq(index).position().top + 50;
+
+					// Seen function, index 1 is class trigger type
+					if (classArrModal[1] == "seen") {
+						if (triggerEvent[classArrModal[0]] != 1 && (elementOffsetTop <= modalScrollTop + modalHeight) && (elementOffsetTop + elementHeight >= modalScrollTop)) {
+							triggerEvent[classArrModal[0]] = 1;
+							var event = classArrModal[2].replace("Event", "").charAt(0).toUpperCase() + classArrModal[2].replace("Event", "").slice(1);
+							var pixel_id = classArrModal[3].split("-");
+
+							! function(f, b, e, v, n, t, s) {
+								if (f.fbq) return;
+								n = f.fbq = function() {
+									n.callMethod ?
+										n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+								};
+								if (!f._fbq) f._fbq = n;
+								n.push = n;
+								n.loaded = !0;
+								n.version = '2.0';
+								n.queue = [];
+								t = b.createElement(e);
+								t.async = !0;
+								t.src = v;
+								s = b.getElementsByTagName(e)[0];
+								s.parentNode.insertBefore(t, s)
+							}(window, document, 'script',
+								'https://connect.facebook.net/en_US/fbevents.js');
+
+							$.each(pixel_id, function(index, value) {
+								fbq('init', value);
+								fbq('trackSingle', value, event);
+							});
+
+							// classArrModal Index 3 is pixel id, index 2 is pixel event from element class
+						}
+					}
+
+					// Bypassed Function, classArrModal index 1 is trigger type from element class
+					if (classArrModal[1] == "bypassed") {
+						if (triggerEventModal[classArrModal[0]] != 1 && elementOffsetTop <= modalScrollTop) {
+							triggerEventModal[classArrModal[0]] = 1;
+							var event = classArrModal[2].replace("Event", "").charAt(0).toUpperCase() + classArrModal[2].replace("Event", "").slice(1);
+							var pixel_id = classArrModal[3].split("-");
+
+							! function(f, b, e, v, n, t, s) {
+								if (f.fbq) return;
+								n = f.fbq = function() {
+									n.callMethod ?
+										n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+								};
+								if (!f._fbq) f._fbq = n;
+								n.push = n;
+								n.loaded = !0;
+								n.version = '2.0';
+								n.queue = [];
+								t = b.createElement(e);
+								t.async = !0;
+								t.src = v;
+								s = b.getElementsByTagName(e)[0];
+								s.parentNode.insertBefore(t, s)
+							}(window, document, 'script',
+								'https://connect.facebook.net/en_US/fbevents.js');
+
+							$.each(pixel_id, function(index, value) {
+								fbq('init', value);
+								fbq('trackSingle', value, event);
+							});
+
+							// classArrModal Index 3 is pixel id, index 2 is pixel event from element class
+						}
+					}
+				});
+			});
+
+
+			$(document).on("click", "button[type='modal']", function() {
+				$('#modal').modal('show');
+			});
+			$(document).on("click", ".fn_closeLPModal", function() {
+				$('#modal').modal('hide');
+			});
+
+							$(window).on('load', function() {
+					$("#gjs").find("form").each(function() {
+						var action = this.action;
+						$('<input>').attr({
+							type: 'hidden',
+							name: 'urlTargetForm',
+							value: action
+						}).appendTo(this);
+						$('<input>').attr({
+							type: 'hidden',
+							name: 'stepsTargetForm',
+							value: '45938'
+						}).appendTo(this);
+						this.action = 'https://funnelspro.co.id/receiver';
+					});
+				});
+						$(window).on('load', function() {
+				$("#modal").find("form").each(function() {
+					var action = this.action;
+					$('<input>').attr({
+						type: 'hidden',
+						name: 'urlTargetForm',
+						value: action
+					}).appendTo(this);
+					$('<input>').attr({
+						type: 'hidden',
+						name: 'stepsTargetForm',
+						value: '45938'
+					}).appendTo(this);
+					this.action = 'https://funnelspro.co.id/receiver';
+				});
+			});
+			
+			$('form').on('submit', function(e) {
+				e.preventDefault();
+				var form = this;
+				// <php if (json_decode($stepsdata[0]['integration']) !== null) { ?>
+				// 	<php 
+				// 		if (isset(json_decode($stepsdata[0]['integration'])[0]) && json_decode($stepsdata[0]['integration'])[0] == "WA"){
+				// 			$myPixel = json_decode($stepsdata[0]['integration'])[4]->pixelId;
+				// 			$myPixel = explode(",",$myPixel);
+				// 			$evnt = json_decode($stepsdata[0]['integration'])[4]->pixelEvent ;
+				// 		}else{
+				// 			$myPixel = json_decode($stepsdata[0]['integration'])[3]->pixelId;
+				// 			$myPixel = explode(",",$myPixel);
+				// 			$evnt = json_decode($stepsdata[0]['integration'])[3]->pixelEvent ;
+				// 		}
+				// 	?>
+				// 	! function(f, b, e, v, n, t, s) {
+				// 		if (f.fbq) return;
+				// 		n = f.fbq = function() {
+				// 			n.callMethod ?
+				// 				n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+				// 		};
+				// 		if (!f._fbq) f._fbq = n;
+				// 		n.push = n;
+				// 		n.loaded = !0;
+				// 		n.version = '2.0';
+				// 		n.queue = [];
+				// 		t = b.createElement(e);
+				// 		t.async = !0;
+				// 		t.src = v;
+				// 		s = b.getElementsByTagName(e)[0];
+				// 		s.parentNode.insertBefore(t, s)
+				// 	}(window, document, 'script',
+				// 		'https://connect.facebook.net/en_US/fbevents.js');
+
+				// 	<php foreach ($myPixel as $key => $value) { ?>
+				// 		fbq('init', '<= $value ?>');
+				// 	<php } ?>
+				// 	<php foreach ($myPixel as $key => $value) { ?>
+				// 		fbq('trackSingle', '<= $value ?>', '<= $evnt ?>');
+				// 	<php } ?>
+				// <php } ?>
+				// setTimeout(function(){ 
+					// Insert statistic button clicked
+					var id_step = 45938;
+					var id_user = 26176;
+					var site_url = "";
+
+					if (site_url == "https://funnelspro.co.id/") {
+						form.submit();
+					} else {
+						$.ajax({
+							type: "POST",
+							url: "funnels/recordButtonClicked",
+							data: {
+								id_user: id_user,
+								id_step: id_step,
+								action: "formSubmit"
+							},
+							dataType: "json",
+							success: function(response) {
+								if (response.status) {
+									form.submit();
+								}
+							}
+						});
+					}
+				// }, 100);
+			})
+		});
+
+		function triggerWA(type, uri, type_redirect, pixel_event, pixel_id, content, numberWa) {
+			var event = pixel_event.charAt(0).toUpperCase() + pixel_event.slice(1);
+			if (id_pixel != 'undefined') {
+				var id_pixel = pixel_id.split("-");
+				! function(f, b, e, v, n, t, s) {
+					if (f.fbq) return;
+					n = f.fbq = function() {
+						n.callMethod ?
+							n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+					};
+					if (!f._fbq) f._fbq = n;
+					n.push = n;
+					n.loaded = !0;
+					n.version = '2.0';
+					n.queue = [];
+					t = b.createElement(e);
+					t.async = !0;
+					t.src = v;
+					s = b.getElementsByTagName(e)[0];
+					s.parentNode.insertBefore(t, s)
+				}(window, document, 'script',
+					'https://connect.facebook.net/en_US/fbevents.js');
+
+				for (var i = 0; i < id_pixel.length; i++) {
+					fbq('init', id_pixel[i]);
+				}
+				for (var i = 0; i < id_pixel.length; i++) {
+					fbq('trackSingle', id_pixel[i], event);
+				}
+			}
+			if (type == 'linkbutton' || type == 'orderProLink') {
+				// Insert statistic button clicked
+				var id_step = 45938;
+				var id_user = 26176;
+				var site_url = "";
+
+				if (site_url == "https://funnelspro.co.id/") {
+					if (type_redirect == 'window.location') {
+						setTimeout(function() {
+							window.location.href = uri;
+						}, 1000);
+					} else {
+						setTimeout(function() {
+							if (detectMob() == true) {
+								var a = document.createElement('a');
+								a.setAttribute('target', '_blank');
+								a.setAttribute('href', uri);
+								a.click();
+							} else {
+								window.open(uri, '_blank');
+							}
+						}, 100);
+					}
+				} else {
+					$.ajax({
+						type: "POST",
+						url: "funnels/recordButtonClicked",
+						data: {
+							id_user: id_user,
+							id_step: id_step,
+							action: type
+						},
+						dataType: "json",
+						success: function(response) {
+							if (response.status) {
+								if (type_redirect == 'window.location') {
+									setTimeout(function() {
+										window.location.href = uri;
+									}, 1000);
+								} else {
+									setTimeout(function() {
+										if (detectMob() == true) {
+											var a = document.createElement('a');
+											a.setAttribute('target', '_blank');
+											a.setAttribute('href', uri);
+											a.click();
+										} else {
+											window.open(uri, '_blank');
+										}
+									}, 100);
+								}
+							}
+						}
+					});
+				}
+			} else if (type == 'csWaRotater') {
+				var groupCsWaRotater = numberWa;
+				var explode = groupCsWaRotater.split('-');
+				var id = explode[0];
+				$.ajax({
+					type: "POST",
+					url: "funnels/getNoCsWaRotater",
+					data: {
+						id: id,
+						id_user:26176,
+					},
+					dataType: "json",
+					success: function(response) {
+						if (typeof response[0].message !== "undefined") {
+							alert(response[0].message);
+						} else {
+							var no_whatsapp = response[0].no_whatsapp;
+							if (no_whatsapp.substr(0, 1) == "0") {
+								nomor = "62" + no_whatsapp.substr(1, no_whatsapp.length)
+							} else if (no_whatsapp.substr(0, 2) == "62") {
+								nomor = no_whatsapp
+							} else if (no_whatsapp.substr(0, 1) == "8") {
+								nomor = "62" + no_whatsapp.substr(1, no_whatsapp.length)
+							} else {
+								nomor = no_whatsapp;
+							}
+							if (content !== "'undefined'" && typeof content !== "undefined") {
+								cont = atob(content);
+							} else {
+								cont = '';
+							}
+							uri = 'https://api.whatsapp.com/send?phone=' + nomor + '&text=' + cont;
+
+							// Insert statistic button clicked
+							var id_step = 45938;
+							var id_user = 26176;
+							var site_url = "";
+
+							if (site_url == "https://funnelspro.co.id/") {
+								if (type_redirect == 'window.location') {
+									setTimeout(function() {
+										window.location.href = uri;
+									}, 1000);
+								} else {
+									setTimeout(function() {
+										if (detectMob() == true) {
+											var a = document.createElement('a');
+											a.setAttribute('target', '_blank');
+											a.setAttribute('href', uri);
+											a.click();
+										} else {
+											window.open(uri, '_blank');
+										}
+									}, 100);
+								}
+							} else {
+								$.ajax({
+									type: "POST",
+									url: "funnels/recordButtonClicked",
+									data: {
+										id_user: id_user,
+										id_step: id_step,
+										action: type
+									},
+									dataType: "json",
+									success: function(response) {
+										if (response.status) {
+											if (type_redirect == 'window.location') {
+												setTimeout(function() {
+													window.location.href = uri;
+												}, 1000);
+											} else {
+												setTimeout(function() {
+													if (detectMob() == true) {
+														var a = document.createElement('a');
+														a.setAttribute('target', '_blank');
+														a.setAttribute('href', uri);
+														a.click();
+													} else {
+														window.open(uri, '_blank');
+													}
+												}, 100);
+											}
+										}
+									}
+								});
+							}
+						}
+					}
+				});
+			} else {
+				if (numberWa.substr(0, 1) == "0") {
+					nomor = "62" + numberWa.substr(1, numberWa.length)
+				} else if (numberWa.substr(0, 2) == "62") {
+					nomor = numberWa
+				} else if (numberWa.substr(0, 1) == "8") {
+					nomor = "62" + numberWa.substr(1, numberWa.length)
+				} else {
+					nomor = numberWa;
+				}
+
+				if (content !== "'undefined'" && typeof content !== "undefined") {
+					cont = atob(content);
+				} else {
+					cont = '';
+				}
+				uri = 'https://api.whatsapp.com/send?phone=' + nomor + '&text=' + cont;
+
+				// Insert statistic button clicked
+				var id_step = 45938;
+				var id_user = 26176;
+				var site_url = "";
+
+				if (site_url == "https://funnelspro.co.id/") {
+					if (type_redirect == 'window.location') {
+						setTimeout(function() {
+							window.location.href = uri;
+						}, 1000);
+					} else {
+						setTimeout(function() {
+							if (detectMob() == true) {
+								var a = document.createElement('a');
+								a.setAttribute('target', '_blank');
+								a.setAttribute('href', uri);
+								a.click();
+							} else {
+								window.open(uri, '_blank');
+							}
+						}, 100);
+					}
+				} else {
+					$.ajax({
+						type: "POST",
+						url: "funnels/recordButtonClicked",
+						data: {
+							id_user: id_user,
+							id_step: id_step,
+							action: type
+						},
+						dataType: "json",
+						success: function(response) {
+							if (response.status) {
+								if (type_redirect == 'window.location') {
+									setTimeout(function() {
+										window.location.href = uri;
+									}, 1000);
+								} else {
+									setTimeout(function() {
+										if (detectMob() == true) {
+											var a = document.createElement('a');
+											a.setAttribute('target', '_blank');
+											a.setAttribute('href', uri);
+											a.click();
+										} else {
+											window.open(uri, '_blank');
+										}
+									}, 100);
+								}
+							}
+						}
+					});
+				}
+			}
+		}
+
+		
+			function nextStep(type, redirect, pixel_event, pixel_id) {
+				var id_funnel = 15028;
+				var number_sort = 1;
+				var id_step = 45938;
+				var target = "";
+
+				if (redirect == "window.location") {
+					target = "_self";
+				} else {
+					target = "_blank";
+				}
+
+				if (pixel_event != "none") {
+					var event = pixel_event.charAt(0).toUpperCase() + pixel_event.slice(1);
+					var id_pixel = pixel_id.split("-");
+					if (id_pixel !== 'undefined') {
+						! function(f, b, e, v, n, t, s) {
+							if (f.fbq) return;
+							n = f.fbq = function() {
+								n.callMethod ?
+									n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+							};
+							if (!f._fbq) f._fbq = n;
+							n.push = n;
+							n.loaded = !0;
+							n.version = '2.0';
+							n.queue = [];
+							t = b.createElement(e);
+							t.async = !0;
+							t.src = v;
+							s = b.getElementsByTagName(e)[0];
+							s.parentNode.insertBefore(t, s)
+						}(window, document, 'script',
+							'https://connect.facebook.net/en_US/fbevents.js');
+
+						for (var i = 0; i < id_pixel.length; i++) {
+							fbq('init', id_pixel[i]);
+						}
+
+						for (var i = 0; i < id_pixel.length; i++) {
+							fbq('trackSingle', id_pixel[i], event);
+						}
+					}
+				}
+
+				setTimeout(() => {
+					$.ajax({
+						type: "POST",
+						url: "funnels/getNextStep",
+						data: {
+							id_funnel: id_funnel,
+							number_sort: number_sort,
+							id_step: id_step
+						},
+						dataType: "json",
+						success: function(response) {
+							if (response == "no step") {
+								alert("There's no another step on your funnel");
+							} else {
+								if (response.domain == null) {
+									var url = "alfacustom.funnelspro.co.id/pathstep/";
+								}
+								if (response.domain != null) {
+									var url = response.domain + '/pathstep/';
+								}
+								url = "https://" + url.replace("pathstep", response.path_step);
+
+								// Insert statistic button clicked
+								var id_step = 45938;
+								var id_user = 26176;
+								var site_url = "";
+
+								// Validation record button clicked
+								if (site_url == "https://funnelspro.co.id/") {
+									if (detectMob() == true) {
+										var a = document.createElement('a');
+										a.setAttribute('target', target);
+										a.setAttribute('href', url);
+										a.click();
+									} else {
+										window.open(url, target);
+									}
+								} else {
+									$.ajax({
+										type: "POST",
+										url: "funnels/recordButtonClicked",
+										data: {
+											id_user: id_user,
+											id_step: id_step,
+											action: type
+										},
+										dataType: "json",
+										success: function(response) {
+											if (response.status) {
+												if (detectMob() == true) {
+													var a = document.createElement('a');
+													a.setAttribute('target', target);
+													a.setAttribute('href', url);
+													a.click();
+												} else {
+													window.open(url, target);
+												}
+											}
+										}
+									});
+								}
+							}
+						}
+					})
+				}, 500);
+			}
+		
+		function scrollTarget(id, editor) {
+			if (editor == "primary") {
+				document.querySelector('#' + id).scrollIntoView({
+					behavior: 'smooth'
+				});
+			}
+
+			if (editor == "modal") {
+				var element = document.getElementById("modal").querySelector('#' + id);
+				element.scrollIntoView({
+					behavior: 'smooth'
+				});
+			}
+		}
+	</script>
+
+<script src="assets/plugins/bootstrap/js/bootstrap.js"></script>
+<script src="assets/plugins/grapejs/bower_components/datetimepicker/build/jquery.datetimepicker.full.min.js"></script>
+<script src="assets/plugins/lazyload/dist/lazyload.min.js"></script>
+<!-- <script src="https://unpkg.com/grapesjs"></script> -->
+
+<script>
+	var USER_ID = 1;
+	var TOKEN = '91u01j0e0di0qsjd09121azz';
+
+	function imageExists(image_url) {
+		var http = new XMLHttpRequest();
+
+		http.open('GET', image_url, false);
+		http.send();
+
+		return http.status != 404;
+	}
+
+	function detectMob() {
+		const toMatch = [
+			/iPhone/i,
+			/iPad/i,
+		];
+
+		return toMatch.some((toMatchItem) => {
+			return navigator.userAgent.match(toMatchItem);
+		});
+	}
+
+	(function() {
+		// if (detectMob() == true) {
+		// 	var button = $('#gjs').find('button');
+		// 	for (var i = 0; i < button.length; i++) {
+		// 		var onclick = button[i].getAttribute('onClick');
+		// 		if (onclick != null || onclick !== "undefined") {
+		// 			button[i].setAttribute('ontouchend', onclick);
+		// 			button[i].removeAttribute('onClick');
+		// 		}
+		// 	}
+		// }
+
+					var img = $('#gjs').find('img');
+			for (var i = 0; i < img.length; i++) {
+				var src = img[i].getAttribute('src');
+				var className = img[i].className + " lazy";
+				img[i].setAttribute('class', className);
+				// if (src != "https://placehold.it/350x150/e1e5e6/6d7b8b?text=Demo+Image") {
+				// 	if (src != null) {
+				// 		var src_substr = src.substr(0, 25);
+				// 		if (src_substr == 'http://localhost/funnelsp' || src_substr == 'https://funnelspro.co.id/') {
+				// 			src = src.replace('https://funnelspro.co.id/', '< $url_site; ?>');
+				// 		}
+				// 	}
+				// }
+			}
+
+			var imgModal = $('#modal').find('.row img');
+			for (var j = 0; j < imgModal.length; j++) {
+				var src = imgModal[j].attributes['src'].value;
+				if (imgModal[j].getAttribute('class') == null) {
+					var className = "lazy";
+				} else {
+					var className = imgModal[j].getAttribute('class') + " lazy";
+				}
+				imgModal[j].setAttribute('class', className);
+				// if (src != "https://placehold.it/350x150/e1e5e6/6d7b8b?text=Demo+Image") {
+				// 	if (src != null) {
+				// 		var src_substr = src.substr(0, 25);
+				// 		if (src_substr == 'http://localhost/funnelsp' || src_substr == 'https://funnelspro.co.id/') {
+				// 			src = src.replace('https://funnelspro.co.id/', '< $url_site; ?>');
+				// 		}
+				// 	}
+				// }
+			}
+
+			var ll = new LazyLoad({
+				elements_selector: ".lazy",
+			});
+			})();
+</script>
+
+</body></html>
