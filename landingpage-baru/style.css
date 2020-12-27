@@ -243,7 +243,7 @@ body {
   min-height: 75px;
   background-color: #f59494;
   background-image: url(assets/images/public/logocool_20201222120149.png);
-  fn_position: 4;
+  /* fn_position: 4; */
   background-repeat: no-repeat !important;
 }
 .cv1m5 {
